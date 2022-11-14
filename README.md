@@ -18,7 +18,7 @@ e possuí um método para por ovos e uma função construtora que cria o ovo.
 
 # Interface
 
-Na interface gráfica, apresente inicialmente uma galinha, que ao ser clicada gera um ovo, que quando clicado some e da 
+Na interface gráfica, apresenta inicialmente uma galinha, que ao ser clicada gera um ovo, que quando clicado some e da 
 origem uma nova galinha.
 
 # Mais informações
