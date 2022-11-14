@@ -14,7 +14,7 @@ obs: onde estiver escrito galinha ou ovo, entenda-se como objeto.
 Básicamente o projeto tem uma função costrutora princial chamada Galinha, ela é responsável por criar as novas galinhas,
 e possuí um método para por ovos e uma função construtora que cria o ovo.
 
-![image](https://user-images.githubusercontent.com/106079184/201759586-d27ca999-61f2-4194-b293-a7ddd832f46a.png)
+![image](https://user-images.githubusercontent.com/106079184/201760721-4562a3f6-e2d3-456a-8b58-602cf138a93b.png)
 
 # Interface
 
@@ -26,6 +26,7 @@ origem uma nova galinha.
 - as informações sobre as galinhas e os ovo são armazendas em array de objetos.
 - para adicionar elementos na página são criadas div's dentro de duas div's
   principais, são elas galinhas e caixaDeOvos.
+  
   
 
   
