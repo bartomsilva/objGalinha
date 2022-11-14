@@ -1,0 +1,88 @@
+*{
+    margin:0;
+    padding: 0;
+    border: 0;    
+} 
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
+ul, ol, li  {
+    list-style: none; 
+}
+a {
+    text-decoration: none;
+}
+p{
+    font-size: 0.5rem;
+}
+.flexivel{
+    display: flex;
+}
+
+.minhaGranja{
+    margin: 0 auto;
+    margin-top: 20px;
+    max-width: 800px;
+    height: 510px;
+    border: 1px solid black;       
+}
+
+.resumo{
+    margin: 0 auto;
+    max-width: 800px;
+    border: 1px solid black;    
+    text-align: center;
+}
+.resumo p {
+    font-size: 1rem;
+}
+
+.producao{
+    margin: 5px;
+    padding: 5px;
+    width: 48%;
+}
+
+.galinhas{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(69, 189, 13, 0.801);
+    overflow: scroll;
+}
+.galinhas div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65px;
+    width: 65px;
+
+}
+.galinhas img{
+    height:40px;
+    margin: 2px;
+    padding: 1px;
+}
+
+.caixaDeOvos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: rgba(170, 170, 170, 0.911);   
+    overflow:scroll; 
+}
+.caixaDeOvos div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 48px;
+    width: 48px;
+}
+.caixaDeOvos img {
+    height: 90%
+    
+}
+
+
