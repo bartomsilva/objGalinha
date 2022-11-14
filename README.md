@@ -1,5 +1,5 @@
 # objGalinha
-trata-se de um um objeto Galinha, que cria novas galinhas, que põe objetos ovos, e objetos ovos que geram objetos galinha.
+trata-se de um objeto Galinha, que cria novas galinhas, que põe objetos ovos, e objetos ovos que geram objetos galinha.
 
 # Fins de Estudo sobre:
 
@@ -9,11 +9,12 @@ trata-se de um um objeto Galinha, que cria novas galinhas, que põe objetos ovos
 
 # O projeto
 
-obs: onde estiver escrito galinha ou ovo, entenda-se como objeto galinha e objeto ovo.
+obs: onde estiver escrito galinha ou ovo, entenda-se como objeto.
 
-Básicamente ele tem uma função costrutora princial chamada Galinha, ela é responsável por criar as novas galinhas,
-ela possuí um método para por ovos e uma função construtora que cria o ovo.
+Básicamente o projeto tem uma função costrutora princial chamada Galinha, ela é responsável por criar as novas galinhas,
+e possuí um método para por ovos e uma função construtora que cria o ovo.
 
+![image](https://user-images.githubusercontent.com/106079184/201759586-d27ca999-61f2-4194-b293-a7ddd832f46a.png)
 
 # Interface
 
@@ -22,5 +23,12 @@ origem uma nova galinha.
 
 # Mais informações
 
+- as informações sobre as galinhas e os ovo são armazendas em array de objetos.
+- para adicionar elementos na página são criadas div's dentro de duas div's
+  principais, são elas galinhas e caixaDeOvos.
+  
+
+  
+  
 
 
