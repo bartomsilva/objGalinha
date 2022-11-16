@@ -27,7 +27,7 @@ origem uma nova galinha.
 - para adicionar elementos na página são criadas div's dentro de duas div's
   principais, são elas galinhas e caixaDeOvos.
   
-  
+  mais informaçõe em breve, projeto ainda em andamento...... 
 
   
   
