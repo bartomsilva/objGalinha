@@ -67,7 +67,6 @@ const removerOvo=(obj)=>{
     // revemo o ovo do DOM
     const ovoDom = document.getElementById( ovo );
     ovoDom.parentNode.removeChild( ovoDom );
-
 }
 
 // chamada da função criar galinha
@@ -85,7 +84,7 @@ const criarGalinha=(origem)=>{
     let novaDiv = document.createElement("div")
 
     // adiciona a nova galinha 
-    let galinha = new Galinha(nomeDaGalinha)
+    const galinha = new Galinha(nomeDaGalinha)
     minhasGalinhas.push(galinha)  
     
     novaDiv.setAttribute('onclick','botarOvo(this)')  
