@@ -54,6 +54,16 @@ const botarOvo=(obj)=>{
     novaimg = document.createElement("img");
     novaimg.setAttribute('src',imagemOvo)
     document.querySelector("#"+nomeDoOvo).appendChild(novaimg)
+
+    // exibindo o nome do ovo
+     // criando elemento paragrafo 
+     let paragrafo = document.createElement("p");
+     // inserindo texto no pagragrafo
+     texto=document.createTextNode(nomeDoOvo.slice(4));
+     // aplicando o texto ao paragrafo
+     paragrafo.appendChild(texto);
+     // adicionando o novo paragrao a nova div
+     document.querySelector("#"+nomeDoOvo).appendChild(paragrafo)
 }
 
 // remover ovo
@@ -95,6 +105,7 @@ const criarGalinha=(origem)=>{
     novaimg.setAttribute('src',imagemGalinha)
     document.querySelector("#"+nomeDaGalinha).appendChild(novaimg)
 
+    // exibindo o nome da galinha
     // criando elemento paragrafo 
     let paragrafo = document.createElement("p");
     // inserindo texto no pagragrafo
@@ -102,9 +113,7 @@ const criarGalinha=(origem)=>{
     // aplicando o texto ao paragrafo
     paragrafo.appendChild(texto);
     // adicionando o novo paragrao a nova div
-    document.querySelector("#"+nomeDaGalinha).appendChild(paragrafo)
-
-    
+    document.querySelector("#"+nomeDaGalinha).appendChild(paragrafo)    
 }
 
 
