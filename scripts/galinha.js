@@ -9,7 +9,8 @@ const minhasGalinhas = []   // lista de galinhas
 const caixaDeOvos = []      // lista de ovos
 const imagemGalinha = "./assets/galinha.png"   // imagem da galinha
 const imagemOvo = "./assets/ovo.png"           // imagem do ovo
-let numeroDaGalinha=0  // numerar as galinhas
+let numeroDaGalinha=0  // numerar as galinhas = total de galinhas
+let numeroTotalDeOvos=0  // número total de ovos de todas galinhas
 
 
 //função construtora que cria a galinha que pôe ovos
@@ -21,7 +22,7 @@ function Galinha(nomeGalinha) {
     // método botar ovo, ele invoca uma função que é Ovo
     this.ovoBotar=()=>{
         this.numOvo++
-        this.totalOvos++
+        this.totalOvos++  // esse total é pora cada galinha 
         return new Ovo(this.numOvo,this.nomeGalinha)
     } 
     // função construtora que cria o ovo e anuncia o feito - cria o objeto ovo
@@ -34,7 +35,7 @@ function Galinha(nomeGalinha) {
     }
 }
 
-// função que manda a gainha por o ovo e é responsável por criar o visual dos ovos
+// função que manda a galinha por o ovo e é responsável por criar o visual dos ovos
 const botarOvo=(obj)=>{
     
     let novaimg = null
@@ -56,14 +57,21 @@ const botarOvo=(obj)=>{
     document.querySelector("#"+nomeDoOvo).appendChild(novaimg)
 
     // exibindo o nome do ovo
-     // criando elemento paragrafo 
-     let paragrafo = document.createElement("p");
-     // inserindo texto no pagragrafo
-     texto=document.createTextNode(nomeDoOvo.slice(4));
-     // aplicando o texto ao paragrafo
-     paragrafo.appendChild(texto);
-     // adicionando o novo paragrao a nova div
-     document.querySelector("#"+nomeDoOvo).appendChild(paragrafo)
+    // criando elemento paragrafo 
+    let paragrafo = document.createElement("p");
+    // inserindo texto no pagragrafo
+    texto=document.createTextNode(nomeDoOvo.slice(4));
+    // aplicando o texto ao paragrafo
+    paragrafo.appendChild(texto);
+    // adicionando o novo paragrao a nova div
+    document.querySelector("#"+nomeDoOvo).appendChild(paragrafo)
+
+    // soma mais um ovo ao total
+    numeroTotalDeOvos ++
+
+    // atualizar resumo
+    atualizarNumeros()
+       
 }
 
 // remover ovo
@@ -75,8 +83,14 @@ const removerOvo=(obj)=>{
     // remove o ovo do array
     caixaDeOvos.splice(ovoPos,1)
     // revemo o ovo do DOM
-    const ovoDom = document.getElementById( ovo );
-    ovoDom.parentNode.removeChild( ovoDom );
+    const ovoDom = document.getElementById( ovo )
+    ovoDom.parentNode.removeChild( ovoDom )
+
+    // diminui um ovo do total
+    numeroTotalDeOvos --  
+    
+    // atualizar resumo
+    atualizarNumeros()
 }
 
 // chamada da função criar galinha
@@ -114,16 +128,38 @@ const criarGalinha=(origem)=>{
     paragrafo.appendChild(texto);
     // adicionando o novo paragrao a nova div
     document.querySelector("#"+nomeDaGalinha).appendChild(paragrafo)    
+
+    // atualizar resumo
+    atualizarNumeros()
+   
 }
 
 
 //primeira galinha
 criarGalinha()
 
-
 function abrirCaixaOvos(){
     console.log(caixaDeOvos)
 }
 
-        
+function atualizarNumeros(){
+
+    /*
+    quando essa função deve ser chamada?
+    1- ao criar uma galinha
+    2- ao criar um ovo
+    3- ao remover um ovo
+    
+    vamos pegar os id's corretos para atualizar..........
+        id="numGalinhas"
+        id="numOvos"     
+    */
+
+    // atualizar o número de galinhas
+    document.querySelector("#numGalinhas").innerHTML=numeroDaGalinha
+
+    // atualizar o número de ovos
+    document.querySelector("#numOvos").innerHTML=numeroTotalDeOvos
+
+}
 
