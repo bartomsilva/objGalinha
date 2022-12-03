@@ -58,12 +58,15 @@ p{
     align-items: center;
     height: 65px;
     width: 65px;
-
+    
 }
 .galinhas img{
     height:44px;
     margin: 2px;
     padding: 1px;
+}
+.galinhas img:hover{
+    cursor: pointer;
 }
 
 .caixaDeOvos{
@@ -82,8 +85,10 @@ p{
     width: 48px;
 }
 .caixaDeOvos img {
-    height: 90%
-    
+    height: 90%    
+}
+.caixaDeOvos img:hover{
+    cursor: pointer;
 }
 
 
