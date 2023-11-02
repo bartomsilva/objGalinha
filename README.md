@@ -11,8 +11,8 @@ trata-se de um objeto Galinha, que cria novas galinhas, que põe objetos ovos, e
 
 obs: onde estiver escrito galinha ou ovo, entenda-se como objeto.
 
-Básicamente o projeto tem uma função costrutora princial chamada Galinha, ela é responsável por criar as novas galinhas,
-e possuí um método para por ovos e uma função construtora que cria o ovo.
+Básicamente o projeto tem uma função construtora principal chamada Galinha, ela é responsável por criar as novas galinhas,
+e possuí um método para por ovos e uma função construtora que cria o ovo que porsua vez cria uma galinha.
 
 ![image](https://user-images.githubusercontent.com/106079184/201760721-4562a3f6-e2d3-456a-8b58-602cf138a93b.png)
 
