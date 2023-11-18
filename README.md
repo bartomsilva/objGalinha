@@ -21,6 +21,10 @@ e possuí um método para por ovos e uma função construtora que cria o ovo que
 Na interface gráfica, apresenta inicialmente uma galinha, que ao ser clicada gera um ovo, que quando clicado some e da 
 origem uma nova galinha.
 
+Link para visualização: 
+https://obj-galinha.vercel.app/
+
+
 # Mais informações
 
 - as informações sobre as galinhas e os ovo são armazendas em array de objetos.
